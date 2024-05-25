@@ -1,0 +1,21 @@
+.header, .awesome{
+    background-color: #1F2937;
+    color: white;
+}
+
+.header a{
+    display: flex;
+    justify-content:flex-end
+}
+
+.header h1{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+    font-size: 18px;
+    color: #E5E7EB;
+}
