@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
+    font-family: Roboto;
 }
 
 .top{
-    display: flex;
     background-color: #1F2937;
     color: white;
-    margin: auto;
-    flex-basis: 100%;
+    margin: 0;
+    padding-left: 15%;
+    flex-direction: column;
 }
 
 .header{
@@ -19,7 +21,7 @@ body{
 
 .header a{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .header h1{
@@ -30,7 +32,19 @@ body{
 
 .awesome{
     display: flex;
+    justify-content: left;
     align-items: center;
+    width: 30%;
+    flex-direction: column;
+}
+
+.awesome img{
+    display: flex;
+    align-items: right;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
 }
 
 .awesome img{
@@ -38,11 +52,31 @@ body{
     width: auto;
     height: 100px;
     background-color: #1F2937;
+    width: 30%;
 }
 
 .random{
     display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+}
+
+.random .boxes{
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.random .box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    flex-wrap: wrap;
+    width: 140px;
+    height: auto;
+    color: rgb(165, 165, 165);
 }
 
 .random h1{
@@ -50,7 +84,7 @@ body{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
-    align-content: center;
+    align-content: flex-start;
     justify-content: center;
 }
 
@@ -62,14 +96,6 @@ body{
     border-radius: 15%;
 }
 
-.random .box{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    flex-wrap: wrap;
-    width: 150px;
-}
-
 .quote{
     display: flex;
     background-color: #e5e7eb;
@@ -78,28 +104,51 @@ body{
     color: #1f2937;
 }
 
+.quote p{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .sign-up{
     display: flex;
     background-color: #3882F6;
     color: white;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 50px auto;
-    padding: 8px 40px;
     border-radius: 5px;
+    width: 50%;
+}
+
+.sign-up-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    padding: 15px 60px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer{
     display: flex;
     background-color: #1f2937;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     color: white;
-    margin-top: auto;
 }
 
 button{
     display: flex;
+    flex-direction: row;
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
