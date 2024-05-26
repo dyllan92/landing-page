@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body{
+html, body{
     display: flex;
     flex-direction: column;
     font-family: Roboto;
+    margin: 0;
 }
 
 .top{
@@ -17,25 +18,21 @@ body{
 .header{
     display: flex;
     flex-direction: row;
-}
-
-.header a{
-    display: flex;
-    justify-content: flex-start;
+    margin: 0;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .header h1{
     font-size: 24px;
     color: #F9FAF8;
-    justify-content: flex-start;
+    text-align: left;
 }
 
 .awesome{
     display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 30%;
-    flex-direction: column;
+    width: 60%;
+    flex-direction: row;
 }
 
 .awesome img{
@@ -43,16 +40,10 @@ body{
     align-items: right;
     width: 500px;
     height: 250px;
-    display: flex;
-    flex-direction: row;
 }
 
-.awesome img{
-    display: flex;
-    width: auto;
-    height: 100px;
-    background-color: #1F2937;
-    width: 30%;
+.sign-up{
+    display: block;
 }
 
 .random{
@@ -125,9 +116,9 @@ body{
 
 .sign-up-text{
     display: flex;
-    flex-direction: column;
-    line-height: 0px;
-    padding: 15px 60px;
+    align-content:space-between;
+    padding: 15px 40px;
+    align-items: center;
 }
 
 .button{
@@ -144,6 +135,7 @@ body{
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 20px;
 }
 
 button{
@@ -161,4 +153,11 @@ a{
     color: white;
     font-size: 18px;
     color: #E5E7EB;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 16px;
 }
