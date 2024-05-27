@@ -29,21 +29,37 @@ html, body{
     text-align: left;
 }
 
+.sub-header{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
 .awesome{
     display: flex;
-    width: 60%;
-    flex-direction: row;
+    flex-direction: column;
+    width: 50%;
 }
 
-.awesome img{
+.awesome-img{
     display: flex;
     align-items: right;
-    width: 500px;
+    width: 600px;
     height: 250px;
+    padding-left: 15%;
 }
 
-.sign-up{
-    display: block;
+.awesome p{
+    margin-top: -5px;
+    width: 80%;
+}
+
+.awesome button{
+    width: 100px;
+    text-align: center;
+    border-color: #3882F6;
 }
 
 .random{
@@ -100,18 +116,18 @@ html, body{
 
 .quote-words{
     display: flex;
-    width: 70%;
+    width: 50%;
     text-align: left;
     justify-content: center;
     align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 25%;
+    padding-right: 25%;
+    height: 350px;
 }
 
 .source{
     text-align: right;
-    margin-right: 20%;
-    margin-top: 0;
+    margin-right: 25%;
     font-weight: 800;
     font-size: 20px;
 }
@@ -160,12 +176,12 @@ html, body{
 
 button{
     display: flex;
-    flex-direction: row;
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
     padding: 8px 20px;
     border-color: white;
+    justify-content: center;
 }
 
 a{
