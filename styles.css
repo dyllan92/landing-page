@@ -118,10 +118,10 @@ html, body{
 
 .sign-up{
     display: flex;
+    flex-direction: row;
     background-color: #3882F6;
     color: white;
     justify-content: space-between;
-    align-items: center;
     margin: 50px auto;
     border-radius: 5px;
     width: 50%;
@@ -129,15 +129,21 @@ html, body{
 
 .sign-up-text{
     display: flex;
-    align-content:space-between;
+    flex-direction: column;
     padding: 15px 40px;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.sign-up-text p{
+    margin-top: -5%;
 }
 
 .button{
-    display: flex;
+    display: inline;
     flex-direction: row;
-    width: 30%;
+    align-self: center;
+    width: 15%;
+    margin-right: 15%;
     justify-content: center;
     align-items: center;
 }
@@ -149,6 +155,7 @@ html, body{
     text-align: center;
     color: white;
     padding: 20px;
+    margin-bottom: 0;
 }
 
 button{
